@@ -1,6 +1,7 @@
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using CRUD_APP.Models;
+using Microsoft.AspNetCore.Mvc;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -28,3 +29,23 @@ builder.Services.AddDbContext<AppDbContext>(options => options.UseMySql(builder.
 // "DefaultConnection" is the setting in the appsettings.json. 
 // MySqlServerVersion and Version are objects sent to the dbContext as options for configuration.
 //Lambda operators (=>) in C# are a way to perform a method without giving it a name. Like an anonymous function.
+
+
+var app = builder.Build();
+
+//configure HTTP requests:
+
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Home/Error");
+    app.UseHsts();
+}
+
+app.UseStaticFiles();
+app.UseHttpsRedirection();
+app.UseRouting();
+app.UseAuthorization();
+
+app.MapControllerRoute(name: "default", pattern: "{controller=Home}/{action=Index}/{Id?}");
+
+app.Run();
