@@ -18,8 +18,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/josh/RiderProjects/ASP.NET-Journey/CRUD_APP
 build_property._RazorSourceGeneratorDebug = 
 
+[/home/josh/RiderProjects/ASP.NET-Journey/CRUD_APP/Views/Product/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/josh/RiderProjects/ASP.NET-Journey/CRUD_APP/Views/Product/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/josh/RiderProjects/ASP.NET-Journey/CRUD_APP/Views/Product/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjdC9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/josh/RiderProjects/ASP.NET-Journey/CRUD_APP/Views/Product/Index.cshtml]

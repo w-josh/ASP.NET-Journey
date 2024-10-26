@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using CRUD_APP.Models; // Import classes from Models. (importing the CRUD_APP.Models namesspace)
 using System.Linq;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Microsoft.Extensions.Options;
 
 namespace CRUD_APP.Controllers; 
 
@@ -89,6 +90,20 @@ public class ProductController : Controller
             return NotFound();
         }
         return View(product);
+    }
+
+    [HttpPost, ActionName("Delete")] //ActionName Delete overrides the DeleteConfirmed Endpoint. So instead of /Product/DeleteConfirmed, it would still be /Product/Delete, with the logic of the DeleteConfirmed Method.
+    [ValidateAntiForgeryToken]
+    public IActionResult DeleteConfirmed(int id)
+    {
+        var product = _context.Products.Find(id);
+        if (product == null)
+        {
+            return NotFound();
+        }
+        _context.Products.Remove(product);
+        _context.SaveChanges();
+        return RedirectToAction(nameof(Index));
     }
     
     
