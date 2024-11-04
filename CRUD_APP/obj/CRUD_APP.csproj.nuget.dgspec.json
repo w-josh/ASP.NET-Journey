@@ -1,30 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/home/josh/RiderProjects/ASP.NET-Journey/CRUD_APP/CRUD_APP.csproj": {}
+    "/Users/josh/RiderProjects/ASP.NET-Journey/CRUD_APP/CRUD_APP.csproj": {}
   },
   "projects": {
-    "/home/josh/RiderProjects/ASP.NET-Journey/CRUD_APP/CRUD_APP.csproj": {
+    "/Users/josh/RiderProjects/ASP.NET-Journey/CRUD_APP/CRUD_APP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/josh/RiderProjects/ASP.NET-Journey/CRUD_APP/CRUD_APP.csproj",
+        "projectUniqueName": "/Users/josh/RiderProjects/ASP.NET-Journey/CRUD_APP/CRUD_APP.csproj",
         "projectName": "CRUD_APP",
-        "projectPath": "/home/josh/RiderProjects/ASP.NET-Journey/CRUD_APP/CRUD_APP.csproj",
-        "packagesPath": "/home/josh/.nuget/packages/",
-        "outputPath": "/home/josh/RiderProjects/ASP.NET-Journey/CRUD_APP/obj/",
+        "projectPath": "/Users/josh/RiderProjects/ASP.NET-Journey/CRUD_APP/CRUD_APP.csproj",
+        "packagesPath": "/Users/josh/.nuget/packages/",
+        "outputPath": "/Users/josh/RiderProjects/ASP.NET-Journey/CRUD_APP/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/josh/.nuget/NuGet/NuGet.Config"
+          "/Users/josh/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net8.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -40,24 +40,26 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.20, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
-              "version": "[7.0.20, )"
+              "version": "[8.0.10, )"
             },
-            "MySqlConnector": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[2.3.7, )"
+              "version": "[8.0.10, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[8.0.2, )"
             }
           },
           "imports": [
@@ -71,20 +73,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.20, 7.0.20]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[7.0.20, 7.0.20]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.20, 7.0.20]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -93,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/josh/.dotnet/sdk/8.0.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

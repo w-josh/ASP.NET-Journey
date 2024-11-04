@@ -24,7 +24,7 @@ builder.Services.AddControllersWithViews();
 
 //Configure the Database context. This is where we call the DbContext in the AppDbContext for configuring options
 
-builder.Services.AddDbContext<AppDbContext>(options => options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),new MySqlServerVersion(new Version(7,0,0))));
+builder.Services.AddDbContext<AppDbContext>(options => options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),new MySqlServerVersion(new Version(9,1,0))));
 
 // "DefaultConnection" is the setting in the appsettings.json. 
 // MySqlServerVersion and Version are objects sent to the dbContext as options for configuration.
@@ -46,6 +46,6 @@ app.UseHttpsRedirection();
 app.UseRouting();
 app.UseAuthorization();
 
-app.MapControllerRoute(name: "default", pattern: "{controller=Home}/{action=Index}/{Id?}");
+app.MapControllerRoute(name: "default", pattern: "{controller=Product}/{action=Index}/{Id?}");
 
 app.Run();

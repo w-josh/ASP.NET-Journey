@@ -1,0 +1,14 @@
+@model CRUD_APP.Models.Product
+
+<h2>Delete Product</h2>
+<p>Are you sure you want to delete this product?</p>
+<div>
+    <p><strong>Name:</strong> @Model.Name</p>
+    <p><strong>Price:</strong> @Model.Price</p>
+</div>
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit">Delete</button>
+</form>
+<a asp-action="Index">Cancel</a>
+

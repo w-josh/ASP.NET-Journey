@@ -1,0 +1,16 @@
+@model CRUD_APP.Models.Product
+
+<h2>Create New Product</h2>
+
+<form asp-action="Create" method="post">
+    <div>
+        <label>Name: </label>
+        <input asp-for="Name"/>
+    </div>
+    <div>
+        <label>Price: </label>
+        <input asp-for="Price" />
+    </div>
+    <button type="submit">Create</button>
+</form>
+<a asp-action = "Index">Back to List</a>
